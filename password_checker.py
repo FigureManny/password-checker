@@ -19,7 +19,8 @@ print(test.find("a"))
 
 password = input("please make a password ")
 password = password.strip()
-if "z" in password and password[-1] == "!" and password[0].isupper():
+symbols = [" @ "," # "," $ "," % "," ^ "," & ", " * ", " ( ", " ) "]
+if "z" and str(symbols) in password and password[-1] == "!" and password[0].isupper():
     print("accept")
 else:
     print("please try again ")
